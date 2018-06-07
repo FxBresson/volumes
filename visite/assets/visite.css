@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#panorama {
+    width: 100vw;
+    height: 100vh
+}
+
+.hotspot {
+    height: 20px;
+    width: 20px;
+    border: solid 2px #fffd54;
+
+    border-radius: 100%;
+
+    transition: background-color 0.5s ease-out;
+
+    cursor: pointer;
+
+}
+
+.hotspot:hover {
+    background-color: #fffd54;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 5vh;
+    right: 5vh;
+    width: 450px;
+    background-color: white;
+    height: 90vh;
+    z-index: 9999;
+
+    border-radius: 20px;
+
+    padding: 100px 50px;
+}
+
+#popup .container {
+    position: absolute;
+    top: 50%;
+
+    width: calc(100% - 100px);
+
+    transform: translateY(-50%);
+}
+
+#popup .title {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 50px;
+
+    color: #fffd54;
+
+    transform: translateX(-150px);
+
+    margin-bottom: 100px;
+}
+
+#popup .description {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: grey;
+    font-weight: 300;
+
+    line-height: 30px;
+    letter-spacing: 1px;
+
+    margin-bottom: 100px;
+}
+
+#popup .icon-container {
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 100px;
+}
+
+
+#popup .icon-container .icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+
+    width: 33.3333%;
+    text-align: center;
+
+    font-family: Roboto, sans-serif;
+    color: grey;
+    font-size: 12px;
+    line-height: 20px;
+
+    padding: 10px;
+
+}
+
+
+#popup .icon-container .icon:hover {
+    font-weight: 700;
+}
+
+#popup .icon-container .icon:hover svg {
+    background-color: #fffd54;
+}
+
+#popup .icon-container .icon svg {
+    height: 30px;
+    width: 30px;
+
+    border-radius: 100%;
+    border: solid 2px #fffd54;
+
+    padding: 20px;
+
+    box-sizing: content-box;
+
+    margin-bottom: 20px;
+}
+
+#popup .icon-container .icon svg path {
+    fill: grey
+}
+
+#popup .button {
+    width: 100%;
+    text-align: center;
+}
+
+#popup .button p {
+    background-color: #fffd54;
+    padding: 10px 20px;
+
+    border-radius: 20px;
+    width: auto;
+    display: inline-block;
+
+    color: grey;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
