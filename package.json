@@ -1,0 +1,22 @@
+{
+  "name": "volumes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FxBresson/volumes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FxBresson/volumes/issues"
+  },
+  "homepage": "https://github.com/FxBresson/volumes#readme",
+  "dependencies": {
+    "slackbots": "^1.1.0"
+  }
+}
